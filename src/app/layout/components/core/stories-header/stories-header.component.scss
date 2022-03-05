@@ -1,0 +1,18 @@
+.user-story {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #DDE7FF;
+}
+
+.user-story
+img, .add-story {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  top: 5%;
+  left: 5%;
+  object-fit: cover;
+  border-radius: 50%;
+}

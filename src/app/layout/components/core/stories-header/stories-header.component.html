@@ -1,1 +1,21 @@
-<p>stories-header works!</p>
+<div class="d-flex flex-row  justify-content-start mt-3 ml-3">
+  <div class="d-flex flex-column">
+    <div class="user-story">
+      <img src="assets/imgs/user.png">
+    </div>
+    <div style="text-align: center">
+      <span style="display: inline-block;">You</span>
+    </div>
+  </div>
+
+  <!-- Other stories-->
+  <div *ngFor="let item of userStories" class="d-flex flex-column" style="margin-left: 1em">
+    <div class="user-story" [ngStyle]="{'border-color': item.seen ? '#DDE7FF':'#a774fb'}">
+      <img [src]="item.user?.avatar">
+    </div>
+    <div>
+      <span style="margin-left: 25%">{{item.user?.firstname}}</span>
+    </div>
+  </div>
+
+</div>
