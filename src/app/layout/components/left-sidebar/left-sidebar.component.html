@@ -1,0 +1,29 @@
+<div class="d-flex flex-column">
+  <!--Logo -->
+  <div class="logo-cofeed">
+    <img src="assets/imgs/cofeed-logo.png">
+  </div>
+
+  <!--begin: menu -->
+  <div class="mt-5" style="margin-left: 10%">
+    <span class="fw-bold text-black mb-5">Menu</span>
+    <!-- begin::Menu items -->
+    <div class="menuItems mt-5">
+      <!-- Navigation button-->
+      <div *ngFor="let item of navigationButtons"
+           [class]="item.name == selectedButton ? 'menu-item active' : 'menu-item'"
+           (click)="updateNavigationButton(item)"
+           role="button">
+        <a>
+          <i [ngStyle]="{ 'color':  item.name == selectedButton ? '#a774fb':'' }"
+             [class]="item.icon"></i>
+          <span [class]="item.name === selectedButton ? 'fw-bold text-dark' : 'fw-bold text-muted'">
+            {{item.name}}
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end::Menu items -->
+  </div>
+  <!--end: menu -->
+</div>
