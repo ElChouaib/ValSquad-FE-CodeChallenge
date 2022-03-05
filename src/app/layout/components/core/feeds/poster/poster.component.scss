@@ -1,0 +1,40 @@
+.post-image {
+  height: 90%;
+  width: 100%;
+}
+
+.post-image
+img {
+  border-radius: 10%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.post-actions {
+  height: 10%;
+}
+
+.user-story {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #DDE7FF;
+}
+
+.user-story
+img {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  top: 5%;
+  left: 5%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.fa {
+  margin-right: 5px;
+  margin-left: 5px;
+}

@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.search {
+  position: relative;
+  margin-top: 2em;
+  background: white;
+  height: 40px;
+  border-style: solid;
+  border-color: #DDE7FF;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-btn {
+  color: grey;
+  float: right;
+ /* width: 40px;
+  height: 40px;*/
+  border-radius: 50%;/*
+  background: #ABB2B9;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  width: 110px;
+  font-family: 'Pangolin', cursive;
+}
+
+/*.fas fa-search{
+  font-weight: 200;
+  font-size: 40px;
+}*/
