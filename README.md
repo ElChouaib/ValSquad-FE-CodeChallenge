@@ -1,27 +1,6 @@
-# ValSquadFECodeChallenge
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- structure of project
+- use d-flex to divide the page into small pieces (left-side-bar, core, stories-header ........)
+ - division of component, services, models(i could use resolver to wait for data to arrive before showing the page but i thought there was no need)
+- use local storage to save the number of likes of each post under a variable (id of post + 'nbrLikes').
+- Trigger search to filter posts
+- use skeleton loader on componenent i couldn't finish
