@@ -15,6 +15,7 @@ import {RightSideBarFooterComponent} from './components/right-sidebar/right-side
 import {PosterComponent} from './components/core/feeds/poster/poster.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import {NgxSkeletonLoaderModule} from "ngx-skeleton-loader";
 
 
 @NgModule({
@@ -31,12 +32,13 @@ import {ReactiveFormsModule} from "@angular/forms";
     RightSideBarFooterComponent,
     PosterComponent
   ],
-  imports: [
-    CommonModule,
-    LayoutRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        LayoutRoutingModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        NgxSkeletonLoaderModule
+    ]
 })
 export class LayoutModule {
 }
