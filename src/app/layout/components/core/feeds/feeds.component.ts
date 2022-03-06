@@ -9,6 +9,7 @@ import {PostService} from "../../../_services/post.service";
 })
 export class FeedsComponent implements OnInit {
   posts: PostModel[] = [];
+  displayedPosts: PostModel[] = [];
 
   constructor(private postService: PostService) {
   }
@@ -17,7 +18,20 @@ export class FeedsComponent implements OnInit {
     // init posts
     this.postService.getAllPosts().subscribe(res => {
       this.posts = res;
+      this.displayedPosts = res;
     })
+
+    this.postService.getSearchCriteria().subscribe(res => {
+      this.updateDisplayedData(res);
+    })
+  }
+
+  updateDisplayedData(res: string) {
+    if (res && res.length) {
+      this.displayedPosts = this.posts.filter(p => p.posterName?.toLocaleLowerCase().includes(res.toLocaleLowerCase()))
+    } else {
+      this.displayedPosts = this.posts
+    }
   }
 
 }

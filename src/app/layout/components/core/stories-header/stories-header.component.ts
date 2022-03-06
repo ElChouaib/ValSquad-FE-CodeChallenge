@@ -20,7 +20,7 @@ export class StoriesHeaderComponent implements OnInit {
   private initUserStories() {
     this.userStories = this.userService.users.map(
       (u, index) => {
-        return new StoryModel(u, index < 3 ? true : false);
+        return new StoryModel(u, index < 2 ? true : false);
       }
     );
   }

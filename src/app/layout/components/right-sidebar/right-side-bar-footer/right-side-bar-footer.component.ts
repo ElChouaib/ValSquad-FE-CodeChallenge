@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-right-side-bar-footer',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./right-side-bar-footer.component.scss']
 })
 export class RightSideBarFooterComponent implements OnInit {
+  footerMenuItems: string[] = [];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
+  ngOnInit(): void {
+    this.initFooterMenuItems();
+  }
+
+  private initFooterMenuItems() {
+    this.footerMenuItems = ["About", "Help", "Terms", "Popular", "Language"];
+  }
 }

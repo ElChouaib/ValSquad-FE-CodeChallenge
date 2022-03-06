@@ -15,7 +15,6 @@ export class PosterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.post)
     if (localStorage.getItem(this.post?._id + 'nbrLikes'))
       this.nbrOfLike = parseInt(<string>localStorage.getItem(this.post?._id + 'nbrLikes'));
   }

@@ -16,7 +16,8 @@
       </div>
     </div>
     <div class="ml-auto">
-      <i (click)="updateNbrOfLike()" role="button" style="color: red" class="fa fa-heart"></i>
+      <i (click)="updateNbrOfLike()" role="button" [ngStyle]="{'color': nbrOfLike > 0 ? 'red': 'grey'}"
+         class="fa fa-heart"></i>
       <small class="fw-bold text-muted">{{nbrOfLike}}</small>
       <i style="color: grey" class="fa fa-comment"></i>
       <small class="fw-bold text-muted">0</small>

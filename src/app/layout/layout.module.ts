@@ -14,6 +14,7 @@ import {LatestPostActivityComponent} from './components/right-sidebar/latest-pos
 import {RightSideBarFooterComponent} from './components/right-sidebar/right-side-bar-footer/right-side-bar-footer.component';
 import {PosterComponent} from './components/core/feeds/poster/poster.component';
 import {HttpClientModule} from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {HttpClientModule} from "@angular/common/http";
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ]
 })
 export class LayoutModule {
